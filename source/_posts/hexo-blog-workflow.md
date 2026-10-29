@@ -10,7 +10,7 @@ tags:
   - GitHub Pages
   - CI/CD
 description: 从 Markdown 源文件到 GitHub Pages，整理这个博客的目录结构、写作方式和发布流程。
-cover: /images/cover.svg
+cover: /images/anime-skyline.png
 ---
 
 这个站点采用 **Hexo + Butterfly + GitHub Pages**。文章以 Markdown 保存，页面由 Hexo 构建，发布交给 GitHub Actions。

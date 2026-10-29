@@ -14,9 +14,10 @@ favicon: /images/favicon.svg
 avatar:
   img: /images/avatar.png
   effect: false
-index_img: /images/cover.svg
-default_top_img: /images/cover.svg
-index_top_img_height: 440px
+index_img: /images/anime-skyline.png
+default_top_img: /images/anime-skyline.png
+background: /images/anime-skyline.png
+index_top_img_height: 560px
 index_site_info_top: 42%
 subtitle:
   enable: true
@@ -26,7 +27,7 @@ subtitle:
     - 把想法做成工具，把实践写成记录。
 cover:
   default_cover:
-    - /images/cover.svg
+    - /images/anime-skyline.png
 index_layout: 3
 index_post_content:
   method: 2
@@ -85,3 +86,5 @@ CDN:
 inject:
   head:
     - <link rel="stylesheet" href="/css/custom.css">
+  bottom:
+    - <script src="/js/atmosphere.js" defer></script>
