@@ -31,7 +31,7 @@
 #miracle-effects-toggle:focus-visible { outline: 3px solid #8d85ed; outline-offset: 3px; }
 #miracle-effects-toggle:disabled { cursor: default; }
 @media (max-width: 600px) {
-  #page-header.full_page { height: 420px !important; background-position: right center; }
+  #page-header.full_page { height: 420px !important; background-position: right center; background-attachment: scroll; }
   #page-header.full_page::before { background: linear-gradient(180deg,#0a123854,#0a12386e); }
   #site-title { font-size: 1.8em !important; }
   #site-subtitle { font-size: 1em !important; padding: 0 16px; }
