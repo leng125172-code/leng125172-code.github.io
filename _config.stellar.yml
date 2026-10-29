@@ -114,5 +114,5 @@ fallbacks:
   cover: /images/covers/hello-miracle.png
   link_card: /images/favicon.svg
 inject:
-  head_end: '<link rel="stylesheet" href="/css/custom.css?v=stellar-1">'
+  head_end: '<link rel="stylesheet" href="/css/custom.css?v=stellar-cover-1">'
   body_end: '<script src="/js/atmosphere.js" defer></script>'

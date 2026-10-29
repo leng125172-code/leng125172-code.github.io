@@ -59,3 +59,7 @@ git push
 - `hexo-workflow.png`：青蓝雨夜城市窗景、动漫开发工作台与小机器人，呼应构建与部署。
 
 侧栏背景保留星空城市，文章封面通过各篇 Front Matter 的 `cover` 单独指定。
+
+## 首页全屏封面
+
+首页使用 Stellar 原生 `site-cover` 区域：`scripts/home-cover.js` 只在构建后的根首页填入全屏介绍，向下滚动进入原生文章列表。首屏文案、三个入口与技术方向卡片在该脚本中维护，样式位于 `source/css/custom.css`。封面复用现有原创星空插画，文章仍使用各自的独立封面。主题依赖源码无需修改。
