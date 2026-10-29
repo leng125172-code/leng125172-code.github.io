@@ -1,7 +1,9 @@
 ---
 title: 公开项目
 date: 2026-10-29 16:00:00
-comments: false
+comments:
+  enabled: false
+active_menu: projects
 ---
 
 这里收录我的部分公开项目。各项目的实现范围、运行方式与最新进度，请查看对应仓库。

@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "images": {
+    "https://leng125172-code.github.io/images/covers/hello-miracle.png": {
+      "updatedAt": "2026-10-29T08:57:25.293Z",
+      "dimensions": {
+        "status": "ready",
+        "width": 1672,
+        "height": 941
+      },
+      "color": {
+        "status": "ready",
+        "algorithm": "hsla-mean-v1",
+        "size": 64,
+        "hsla": [
+          24.7682,
+          35.9556,
+          59.517,
+          1
+        ]
+      }
+    },
+    "https://leng125172-code.github.io/images/covers/hexo-workflow.png": {
+      "updatedAt": "2026-10-29T08:57:25.290Z",
+      "dimensions": {
+        "status": "ready",
+        "width": 1672,
+        "height": 941
+      },
+      "color": {
+        "status": "ready",
+        "algorithm": "hsla-mean-v1",
+        "size": 64,
+        "hsla": [
+          200.1858,
+          17.4185,
+          27.298,
+          1
+        ]
+      }
+    }
+  }
+}

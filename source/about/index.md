@@ -1,7 +1,9 @@
 ---
 title: 关于我
 date: 2026-10-29 16:00:00
-comments: false
+comments:
+  enabled: false
+active_menu: about
 ---
 
 ## 你好，我是 Miracle 👋

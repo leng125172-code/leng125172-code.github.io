@@ -8,7 +8,7 @@ tags:
   - 博客
   - 开发实践
 description: 给开发实践留一个可以回看、整理与分享的地方。
-cover: /images/anime-skyline.png
+cover: /images/covers/hello-miracle.png
 ---
 
 这个博客开张了。

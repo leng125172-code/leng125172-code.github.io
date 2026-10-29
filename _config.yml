@@ -45,14 +45,11 @@ time_format: HH:mm:ss
 updated_option: date
 per_page: 10
 pagination_dir: page
-theme: butterfly
-search:
-  path: search.xml
-  field: post
-  content: true
+theme: stellar
 feed:
   type: atom
   path: atom.xml
   limit: 20
 sitemap:
   path: sitemap.xml
+favicon: /images/favicon.svg

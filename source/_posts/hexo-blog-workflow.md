@@ -1,19 +1,19 @@
 ---
-title: 这个博客如何运行：Hexo、Butterfly 与自动发布
+title: 这个博客如何运行：Hexo、Stellar 与自动发布
 date: 2026-10-29 15:50:00
 updated: 2026-10-29 15:50:00
 categories:
   - 工程实践
 tags:
   - Hexo
-  - Butterfly
+  - Stellar
   - GitHub Pages
   - CI/CD
 description: 从 Markdown 源文件到 GitHub Pages，整理这个博客的目录结构、写作方式和发布流程。
-cover: /images/anime-skyline.png
+cover: /images/covers/hexo-workflow.png
 ---
 
-这个站点采用 **Hexo + Butterfly + GitHub Pages**。文章以 Markdown 保存，页面由 Hexo 构建，发布交给 GitHub Actions。
+这个站点采用 **Hexo + Stellar + GitHub Pages**。文章以 Markdown 保存，页面由 Hexo 构建，发布交给 GitHub Actions。
 
 <!-- more -->
 
@@ -22,7 +22,7 @@ cover: /images/anime-skyline.png
 | 组件 | 用途 |
 | --- | --- |
 | Hexo | 将文章、分类与标签生成静态页面 |
-| Butterfly | 提供导航、文章卡片、目录和明暗模式 |
+| Stellar | 提供导航、文章卡片、目录和明暗模式 |
 | GitHub Actions | 在推送后构建、发布站点 |
 | GitHub Pages | 托管生成后的 HTML、CSS 和 JavaScript |
 
@@ -68,9 +68,9 @@ git push
 ## 维护入口
 
 - `_config.yml`：站点标题、域名、语言和文章路径。
-- `_config.butterfly.yml`：主题、导航、侧栏和搜索。
+- `_config.stellar.yml`：主题、导航、侧栏和搜索。
 - `source/_posts/`：文章。
 - `source/about/`、`source/projects/`：独立页面。
 - `.github/workflows/pages.yml`：自动发布流程。
 
-参考：[Hexo 官方部署文档](https://hexo.io/docs/github-pages.html)、[Butterfly 官方文档](https://butterfly.js.org/)。
+参考：[Hexo 官方部署文档](https://hexo.io/docs/github-pages.html)、[Stellar 官方文档](https://xaoxuu.com/wiki/stellar/)。

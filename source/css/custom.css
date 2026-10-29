@@ -1,44 +1,10 @@
-/* Celestial anime atmosphere, with readable surfaces in both modes. */
-:root { --miracle-accent: #8d85ed; --miracle-glass: rgba(250,250,255,.93); --miracle-border: rgba(151,143,215,.23); }
-[data-theme="dark"] { --miracle-glass: rgba(18,23,43,.94); --miracle-border: rgba(168,179,244,.2); }
-#web_bg { background-position: 75% center; }
-#web_bg::after { content: ""; position: absolute; inset: 0; background: rgba(220,225,248,.43); }
-[data-theme="dark"] #web_bg::after { background: rgba(6,10,28,.56); }
-#page-header { background-position: center 48%; }
-#page-header::before { background: linear-gradient(90deg,rgba(9,16,47,.38),rgba(13,18,52,.22) 65%,rgba(9,16,47,.12)); }
-#site-title { letter-spacing: .06em; text-shadow: 0 2px 18px #101435,0 0 36px #91b8ff66 !important; }
-#site-subtitle { letter-spacing: .06em; font-weight: 400; text-shadow: 0 2px 8px #071125; }
-#page-header #site_social_icons .social-icon { filter: drop-shadow(0 2px 5px #08122c); }
-#nav { text-shadow: 0 1px 5px #101a43; }
-#page-header.nav-fixed #nav { backdrop-filter: blur(16px); background: var(--miracle-glass); text-shadow: none; }
-#recent-posts > .recent-post-item, #aside-content .card-widget, #page, #post, #archive, #tag, #category {
-  background: var(--miracle-glass);
-  border: 1px solid var(--miracle-border);
-  box-shadow: 0 8px 30px #111d4926;
-  border-radius: 16px;
-}
-#recent-posts > .recent-post-item { transition: transform .3s ease,box-shadow .3s ease; }
-@media (hover:hover) and (prefers-reduced-motion:no-preference) {
-  #recent-posts > .recent-post-item:hover { transform: translateY(-5px); box-shadow: 0 15px 38px #3f34894a; }
-}
-#aside-content .avatar-img { box-shadow: 0 0 0 3px #a8a3ed66,0 0 22px #9184ee55; }
-#article-container { line-height: 1.9; }
-#article-container a { overflow-wrap: anywhere; }
-#article-container table { display: block; max-width: 100%; overflow-x: auto; }
-#footer { background: rgba(16,23,51,.89); backdrop-filter: blur(10px); }
-#miracle-atmosphere { position: fixed; inset: 0; z-index: 3; pointer-events: none; }
-#miracle-effects-toggle { position: fixed; left: 14px; bottom: 16px; z-index: 90; border: 1px solid var(--miracle-border); border-radius: 24px; padding: 7px 12px; color: var(--font-color); background: var(--miracle-glass); box-shadow: 0 2px 14px #15214b20; font: inherit; font-size: 12px; cursor: pointer; }
-#miracle-effects-toggle:focus-visible { outline: 3px solid #8d85ed; outline-offset: 3px; }
-#miracle-effects-toggle:disabled { cursor: default; }
-@media (max-width: 600px) {
-  #page-header.full_page { height: 420px !important; background-position: right center; background-attachment: scroll; }
-  #page-header.full_page::before { background: linear-gradient(180deg,#0a123854,#0a12386e); }
-  #site-title { font-size: 1.8em !important; }
-  #site-subtitle { font-size: 1em !important; padding: 0 16px; }
-  #miracle-effects-toggle { left: 8px; bottom: 10px; padding: 5px 9px; }
-}
-@media (prefers-reduced-motion:reduce) {
-  #recent-posts > .recent-post-item { transition: none; }
-  #miracle-atmosphere { display: none; }
-  .bg-animation, #site-info, #content-inner, #footer { animation: none !important; }
-}
+/* Preserve Stellar's native hierarchy; the artwork belongs to the sidebar and covers. */
+#miracle-atmosphere { position:fixed;inset:0;z-index:3;pointer-events:none; }
+#miracle-effects-toggle { position:fixed;left:14px;bottom:16px;z-index:90;border:1px solid var(--block-border);border-radius:24px;padding:7px 12px;color:var(--text-p1);background:var(--card);box-shadow:0 2px 14px #15214b20;font:inherit;font-size:12px;cursor:pointer; }
+#miracle-effects-toggle:focus-visible { outline:3px solid #8d85ed;outline-offset:3px; }
+#miracle-effects-toggle:disabled { cursor:default; }
+@media (max-width:600px) { #miracle-effects-toggle {left:8px;bottom:10px;padding:5px 9px;} }
+@media (prefers-reduced-motion:reduce) { #miracle-atmosphere {display:none;} }
+/* Keep light cover art from washing out article titles. */
+.post-list .post-card.photo .cover-info { background:linear-gradient(transparent,rgba(8,14,27,.82)); }
+.post-list .post-card.photo .cover-info .text { color:#fff!important;text-shadow:0 2px 8px #0009; }
