@@ -1,0 +1,87 @@
+nav:
+  fixed: true
+menu:
+  首页: / || fas fa-home
+  归档: /archives/ || fas fa-archive
+  标签: /tags/ || fas fa-tags
+  分类: /categories/ || fas fa-folder-open
+  项目: /projects/ || fas fa-code
+  关于: /about/ || fas fa-user
+social:
+  fab fa-github: https://github.com/leng125172-code || GitHub
+  fas fa-rss: /atom.xml || RSS
+favicon: /images/favicon.svg
+avatar:
+  img: /images/avatar.png
+  effect: false
+index_img: /images/cover.svg
+default_top_img: /images/cover.svg
+index_top_img_height: 440px
+index_site_info_top: 42%
+subtitle:
+  enable: true
+  effect: false
+  source: false
+  sub:
+    - 把想法做成工具，把实践写成记录。
+cover:
+  default_cover:
+    - /images/cover.svg
+index_layout: 3
+index_post_content:
+  method: 2
+  length: 160
+post_meta:
+  page:
+    tags: true
+post_copyright:
+  enable: false
+post_edit:
+  enable: true
+  url: https://github.com/leng125172-code/leng125172-code.github.io/edit/main/source/
+footer:
+  owner:
+    enable: true
+    since: 2026
+  custom_text: 把想法做成工具，把实践写成记录。
+aside:
+  card_author:
+    description: .NET / Vue · 工业视觉 · 容器化工具
+    button:
+      enable: true
+      icon: fab fa-github
+      text: 我的 GitHub
+      link: https://github.com/leng125172-code
+  card_announcement:
+    content: 欢迎来到 Miracle 的技术手记。这里记录开发实践、问题定位与实用工具。
+darkmode:
+  enable: true
+  button: true
+  autoChangeMode: 1
+search:
+  use: local_search
+  placeholder: 搜索文章
+  local_search:
+    preload: false
+    top_n_per_article: 2
+    unescape: false
+share:
+  use: false
+busuanzi:
+  site_uv: false
+  site_pv: false
+  page_pv: false
+font:
+  global_font_size: 16px
+  font_family: '-apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif'
+lazyload:
+  enable: true
+  native: true
+CDN:
+  internal_provider: local
+  third_party_provider: jsdelivr
+  option:
+    fontawesome: /vendor/fontawesome/css/all.min.css
+inject:
+  head:
+    - <link rel="stylesheet" href="/css/custom.css">

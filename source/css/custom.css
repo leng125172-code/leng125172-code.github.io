@@ -1,0 +1,12 @@
+#site-title { letter-spacing: .06em; }
+#site-subtitle { letter-spacing: .06em; font-weight: 400; }
+#page-header #site-title { text-shadow: 0 2px 8px #0005; }
+#article-container { line-height: 1.9; }
+#article-container a { overflow-wrap: anywhere; }
+#article-container table { display: block; max-width: 100%; overflow-x: auto; }
+#footer { background: #24375b; }
+@media (max-width: 600px) {
+  #page-header.full_page { height: 360px !important; }
+  #site-title { font-size: 1.8em !important; }
+  #site-subtitle { font-size: 1em !important; padding: 0 16px; }
+}
