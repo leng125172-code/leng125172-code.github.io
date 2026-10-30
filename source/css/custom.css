@@ -1,10 +1,10 @@
 /* Preserve Stellar's native hierarchy; the artwork belongs to the sidebar and covers. */
-#miracle-atmosphere { position:fixed;inset:0;z-index:3;pointer-events:none; }
-#miracle-effects-toggle { position:fixed;left:14px;bottom:16px;z-index:90;border:1px solid var(--block-border);border-radius:24px;padding:7px 12px;color:var(--text-p1);background:var(--card);box-shadow:0 2px 14px #15214b20;font:inherit;font-size:12px;cursor:pointer; }
-#miracle-effects-toggle:focus-visible { outline:3px solid #8d85ed;outline-offset:3px; }
-#miracle-effects-toggle:disabled { cursor:default; }
-@media (max-width:600px) { #miracle-effects-toggle {left:8px;bottom:10px;padding:5px 9px;} }
+#miracle-atmosphere { position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none; }
 @media (prefers-reduced-motion:reduce) { #miracle-atmosphere {display:none;} }
+/* Readable footer links; Stellar supplies the single native settings entry. */
+.site-region__footer-actions .social.is-icon-only { width:auto;min-width:0;padding:0 10px;gap:6px; }
+.site-region__footer-actions .social::after { content:attr(title);font-size:12px;line-height:1.4;white-space:nowrap; }
+.site-region__footer-actions .region-actions { gap:8px;flex-wrap:wrap; }
 /* Keep light cover art from washing out article titles. */
 .post-list .post-card.photo .cover-info { background:linear-gradient(transparent,rgba(8,14,27,.82)); }
 .post-list .post-card.photo .cover-info .text { color:#fff!important;text-shadow:0 2px 8px #0009; }
@@ -15,7 +15,7 @@
 .miracle-cover-image,.miracle-cover-shade { position:absolute;inset:0;width:100%;height:100%; }
 .miracle-cover-image { object-fit:cover;object-position:65% center;z-index:-2; }
 .miracle-cover-shade { z-index:-1;background:linear-gradient(90deg,rgba(5,10,29,.88),rgba(8,13,35,.58) 53%,rgba(9,14,36,.26)),linear-gradient(0deg,rgba(5,9,25,.7),transparent 35%); }
-.miracle-cover-wrap { max-width:1240px;min-height:inherit;margin:0 auto;padding:0 clamp(24px,5vw,72px);display:flex;flex-direction:column;box-sizing:border-box; }
+.miracle-cover-wrap { position:relative;z-index:1;max-width:1240px;min-height:inherit;margin:0 auto;padding:0 clamp(24px,5vw,72px);display:flex;flex-direction:column;box-sizing:border-box; }
 .miracle-cover-nav { display:flex;align-items:center;justify-content:space-between;padding:32px 0;gap:24px; }
 .miracle-home-cover a { color:inherit;text-decoration:none; }
 .miracle-cover-brand { display:inline-flex;align-items:center;gap:14px;font-size:13px;font-weight:750;letter-spacing:.15em; }

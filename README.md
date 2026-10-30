@@ -47,7 +47,7 @@ git push
 
 ## 星空主题与特效
 
-背景位于 `source/images/anime-skyline.png`。轻量 Canvas 流星、浮光和点击星屑由 `source/js/atmosphere.js` 提供；左下角可关闭，关闭状态保存在本地。尊重系统减少动画偏好，页面隐藏时暂停，手机减少粒子数。
+背景位于 `source/images/anime-skyline.png`。首页首屏的 Canvas 星光、闪烁与流星由 `source/js/atmosphere.js` 提供，不显示悬浮开关。尊重系统减少动画偏好；滚出首屏或页面隐藏时暂停，手机减少粒子数。侧栏底部保留 GitHub、RSS 文字链接及 Stellar 自带的唯一设置入口。
 
 生成方式：内置 imagegen。提示词概要：宽幅二次元星空未来城市，右侧白发成年少女背影，靛蓝与薰衣草紫光影，中央留出标题空间，无文字、无水印。
 
